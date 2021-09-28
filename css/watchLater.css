@@ -1,0 +1,38 @@
+body {
+    background-color: #131515;
+    width: 100vw;
+    height: 1500px;
+}
+
+.LOGO {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+ 
+.nav-list {
+    list-style: none;
+    float: left;
+    margin-top: 60px;
+    margin-left: 5%;
+
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.nav-list li a {
+    font-size: 30px;
+    color: #dfdfdf;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.nav-list li a:hover {
+   border-bottom: #7DE2D1 solid 4px;
+
+}
