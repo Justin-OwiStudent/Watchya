@@ -1,7 +1,7 @@
 body {
     background-color: #131515;
     width: 100vw;
-    height: 1500px;
+    height: 1000px;
 }
 
 .LOGO {
@@ -35,4 +35,28 @@ body {
 .nav-list li a:hover {
    border-bottom: #7DE2D1 solid 4px;
 
+}
+
+
+.left{
+    background-color: red;
+    height: 80vh;
+
+}
+.right{
+    background-color:blue;
+    height: 80vh;
+
+}
+.open{
+    height: 185px;
+    background-color:#131515;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer{
+   
+    background-color: darkorchid;
+    height: 200px;
 }
