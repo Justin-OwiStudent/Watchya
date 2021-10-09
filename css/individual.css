@@ -2,6 +2,8 @@ body {
     background-color: #131515;
     width: 100vw;
     height: 950px;
+    background-image: url(../images/dark\ background.jpg);
+    background-size: cover;
 }
 
 .LOGO {
@@ -41,15 +43,19 @@ body {
 .left{
     background-color:#131515;
     height: 100vh;
+ background-color: rgba(184, 147, 147, 0);
+ color: rgb(255, 255, 255);
 
 }
 .right{
-    background-color:#131515;
+    background-color: rgba(184, 147, 147, 0);
     height: 100vh;
    float: right;
-
-
+  
 }
+
+
+
 .space1{
     background-color:#131515 ;
     height: 90vh;
@@ -63,10 +69,11 @@ body {
 
 }
 .Movie-picture{
-    height: 10vh;
-   
-    width: 40%;
+    height: 89vh;
+  
+    width:400px;
     margin-left: 20%;
+
     
 
    
@@ -74,7 +81,7 @@ body {
 }
 .open{
     height: 185px;
-    background-color:#131515;
+    background-color: rgba(184, 147, 147, 0);
     text-align: center;
     padding-top: 20px;
 }
@@ -87,7 +94,8 @@ body {
 .left-child-one{
    
     height: 150px;
-    background-color: rgb(127, 255, 153);
+    background-color: rgba(78, 76, 76, 0.4);
+    border-radius: 10px;
     
 }
 .text-genre{
@@ -107,7 +115,20 @@ body {
 .title{
   text-transform: capitalize;
     float: left;
+    margin-left: 2%;
    
+  
+   
+}
+.studio{
+   
+    width: 150px;
+    margin-left: 10px;
+   
+}
+.Age-rating{
+    
+margin-left:5px ;
 }
 .left-child-two{
    
@@ -118,4 +139,12 @@ body {
     
     height: 200px;
     background-color: rgb(255, 193, 127);
+}
+.Sep-line{
+    background-color: honeydew;
+    width: 400px;
+    height: 3px;
+   
+
+  
 }
