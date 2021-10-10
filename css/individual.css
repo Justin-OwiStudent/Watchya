@@ -1,28 +1,30 @@
 body {
     background-color: #131515;
     width: 100vw;
-    height: 1000px;
+    height: 950px;
+    background-image: url(../images/dark\ background.jpg);
+    background-size: cover;
 }
 
 .LOGO {
     width: 150px;
     height: 150px;
     float: left;
-    margin-left: 100px;
+    
     margin-bottom: 30px;
+    
 }
  
 .nav-list {
     list-style: none;
     float: left;
     margin-top: 60px;
-    margin-left: 5%;
-
 }
 
 .nav-list li {
     display: inline-block;
-    margin-left: 150px;
+    margin: 0 auto;
+    padding-left: 100px;
 }
 
 .nav-list li a {
@@ -39,18 +41,47 @@ body {
 
 
 .left{
-    background-color: red;
-    height: 80vh;
+    background-color:#131515;
+    height: 100vh;
+ background-color: rgba(184, 147, 147, 0);
+ color: rgb(255, 255, 255);
 
 }
 .right{
-    background-color:blue;
-    height: 80vh;
+    background-color: rgba(184, 147, 147, 0);
+    height: 100vh;
+   float: right;
+  
+}
+
+
+
+.space1{
+    background-color:#131515 ;
+    height: 90vh;
+
+
+}
+.space1{
+    background-color:#131515 ;
+    height: 90vh;
+
+
+}
+.Movie-picture{
+    height: 89vh;
+  
+    width:400px;
+    margin-left: 20%;
+
+    
+
+   
 
 }
 .open{
     height: 185px;
-    background-color:#131515;
+    background-color: rgba(184, 147, 147, 0);
     text-align: center;
     padding-top: 20px;
 }
@@ -58,5 +89,62 @@ body {
 .footer{
    
     background-color: darkorchid;
+    height: 100px;
+}
+.left-child-one{
+   
+    height: 150px;
+    background-color: rgba(78, 76, 76, 0.4);
+    border-radius: 10px;
+    
+}
+.text-genre{
+  text-align: left;  
+  width: 150px;
+  height: 50px;
+ 
+  float: left;
+  padding: 15px;
+
+}
+.genre{
+    float: left;
+    padding-top: 20px;
+}
+
+.title{
+  text-transform: capitalize;
+    float: left;
+    margin-left: 2%;
+   
+  
+   
+}
+.studio{
+   
+    width: 150px;
+    margin-left: 10px;
+   
+}
+.Age-rating{
+    
+margin-left:5px ;
+}
+.left-child-two{
+   
+    height: 170px;
+    background-color: rgb(255, 127, 249);
+}
+.left-child-three{
+    
     height: 200px;
+    background-color: rgb(255, 193, 127);
+}
+.Sep-line{
+    background-color: honeydew;
+    width: 400px;
+    height: 3px;
+   
+
+  
 }
