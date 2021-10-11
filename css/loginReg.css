@@ -7,32 +7,109 @@ body {
 .LOGO {
     width: 150px;
     height: 150px;
-    float: left;
-    margin-left: 100px;
+
+    margin-left: 120px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
  
-.nav-list {
-    list-style: none;
+.container {
+    width: 80%;
+    height: 60vh;
+    background-color: white;
+    box-shadow: 6px 7px 24px -10px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 6px 7px 24px -10px rgba(0,0,0,0.31);
+    -moz-box-shadow: 6px 7px 24px -10px rgba(0,0,0,0.31);
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.left {
+    width: 50%;
+    height: 60vh;
     float: left;
-    margin-top: 60px;
-    margin-left: 5%;
+    text-align: center;
+    position: relative;
 
 }
 
-.nav-list li {
-    display: inline-block;
-    margin-left: 150px;
+
+.right {
+    width: 50%;
+    height: 60vh;
+    float: left;
+    text-align: center;
+    position: relative;
+
 }
 
-.nav-list li a {
+
+.panel {
+    
+    width: 50%;
+    height: 70vh;
+    background-color: #7DE2D1;
+    color: black;
+    border: black 2px solid;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -5vh;
+    right: 0;
+    transition: all ease-in-out 700ms ;
+}
+
+h1 {
     font-size: 30px;
-    color: #dfdfdf;
-    text-decoration: none;
-    padding-bottom: 10px;
+    margin-top: 50px;
+   
 }
 
-.nav-list li a:hover {
-   border-bottom: #7DE2D1 solid 4px;
+input{
+    width: 76%;
+    height: 35px;
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding-left: 4%;
+    margin-top:25px;
+}
 
+.button{
+    width: 80%;
+    height: 25px;
+    padding-top: 10px;
+    background-color: #7DE2D1;
+    color: black;
+    margin:  0 auto;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 300 !important;
+    transition: all ease 200ms;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    border: black 2px solid;
+}
+.button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.panel-slide {
+    margin-right: 50%;
+
+}
+
+
+.btn {
+    width: 600px;
+    height: 600px;
+   
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
 }

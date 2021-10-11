@@ -7,7 +7,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../JS/login.js">    </script>
+    <!-- CSS -->
     <link rel="stylesheet"  href="../css/loginReg.css">
+    <!--  -->
+    
 
     <title>Document</title>
 
@@ -15,14 +21,31 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">
-            <img class="LOGO" src="../Watchya/images/LOGO.svg">
+        <a href="../home.html">
+            <img class="LOGO" src="../images/LOGO.svg">
         </a>
-        <ul class="nav-list">
-           <li><a id="ref-1" href="../home.html">Home Page</a></li>
-           <li><a id="ref-2" href="../pages/watchLater.html">Watch later</a></li>
-           <li><a id="ref-3" href="../pages/movieLib.html">Movie Library</a></li>
-        </ul>
      </nav>
 </body>
+
+<div class="container">
+    <div class="left">
+      <h1>Login</h1>
+      <input class="first" type="text" placeholder="First Name" required>
+      <input class="last" type="text" placeholder="Last Name" required>
+      <input class="pass1" type="password" placeholder="Select a Password" required>
+      <div class="button">Login</div>
+    </div> <!-- left -->
+    <div class="right">
+      <h1>Register</h1>
+      <input class="first" type="text" placeholder="First Name" required>
+      <input class="last" type="text" placeholder="Last Name" required>
+      <input class="email" type="email" placeholder="Your Email" required>
+      <input class="pass1" type="password" placeholder="Select a Password" required>
+      <input class="pass2" type="password" placeholder="Confirm Password" required>
+      <div class="button">Submit Form</div>
+    </div><!-- right -->
+    <div class="panel"> <div class="btn">Click to Slide</div></div>
+
+</div>
+
 </html>
