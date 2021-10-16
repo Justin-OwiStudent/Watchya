@@ -42,7 +42,7 @@ body {
 
 .left{
     background-color:#131515;
-    height: 100vh;
+    height: auto;
  
  color: rgb(255, 255, 255);
  background-color: #0000006f;
@@ -84,7 +84,7 @@ body {
 }
 .open{
     height: 185px;
-    background-color: rgba(184, 147, 147, 0);
+    
     text-align: center;
     padding-top: 20px;
 }
@@ -133,12 +133,20 @@ body {
 margin-left:5px ;
 }
 .left-child-two{
+ 
+    height: auto;
+    
    
-    height: 170px;
+}
+.descriptin{
+  width: 90%;  
+ 
+  height: auto;
+  word-wrap: break-word
 }
 .left-child-three{
     
-    height: 200px;
+    height: auto;
  
 }
 .Sep-line{
@@ -156,7 +164,7 @@ margin-left:5px ;
     float: right;
   
     width: 450px;
-    height: 100px;
+    height: auto;
     padding: 20px;
 }
 .Watch-button{
@@ -169,5 +177,14 @@ margin-left:5px ;
     float: right ;
     padding-top: 10px; ;
     margin-right: 10%;
+}
+.Watch-button:hover{
+   background-color: #7DE2D1;
+   color: #000;
+}
+.back-img{
+    height: 400px;
+    background-image: url(../images/beauty&thebeast.jpg);
+    background-size: cover;
 }
 
