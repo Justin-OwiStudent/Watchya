@@ -43,8 +43,11 @@ body {
 .left{
     background-color:#131515;
     height: 100vh;
- background-color: rgba(184, 147, 147, 0);
+ 
  color: rgb(255, 255, 255);
+ background-color: #0000006f;
+ border: solid 1px #7DE2D1;
+ border-radius: 40px;
 
 }
 .right{
@@ -88,14 +91,13 @@ body {
 
 .footer{
    
-    background-color: darkorchid;
+    background-color: rgba(184, 147, 147, 0);
     height: 100px;
 }
 .left-child-one{
    
     height: 150px;
-    background-color: rgba(78, 76, 76, 0.4);
-    border-radius: 10px;
+   
     
 }
 .text-genre{
@@ -133,12 +135,11 @@ margin-left:5px ;
 .left-child-two{
    
     height: 170px;
-    background-color: rgb(255, 127, 249);
 }
 .left-child-three{
     
     height: 200px;
-    background-color: rgb(255, 193, 127);
+ 
 }
 .Sep-line{
     background-color: #dfdfdf;
@@ -147,12 +148,16 @@ margin-left:5px ;
    
 
   
+}#thum-up{
+    float:right ;
+    margin-right: 80px;
 }
 .Button-block{
     float: right;
-    background-color: #7DE2D1;
-    width: 200px;
-    height: 40px;
+  
+    width: 450px;
+    height: 100px;
+    padding: 20px;
 }
 .Watch-button{
     width: 200px;
@@ -161,4 +166,8 @@ margin-left:5px ;
     background-color: darkslategrey;
     color: honeydew;
     text-align: center;
+    float: right ;
+    padding-top: 10px; ;
+    margin-right: 10%;
 }
+
