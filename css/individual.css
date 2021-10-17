@@ -96,7 +96,7 @@ body {
 }
 .left-child-one{
    
-    height: 150px;
+    height: 170px;
    
     
 }
@@ -183,8 +183,21 @@ margin-left:5px ;
    color: #000;
 }
 .back-img{
-    height: 400px;
+    height: 500px;
+    background-image: url(../images/img-grad.png);
     background-image: url(../images/beauty&thebeast.jpg);
     background-size: cover;
+    
 }
+.hover{
+    background-image: url(../images/img-grad.png);
+    
+    background-size: cover;
+  
+   
+    height: 500px;
+    margin:  0 auto;
+    padding: 0 auto;
+}
+
 
