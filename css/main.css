@@ -14,6 +14,7 @@ body {
   background-color: #ffffff11;
   background-image: url(../images/back.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
@@ -38,7 +39,7 @@ body {
 .nav-list li {
     display: inline-block;
     margin: 0 auto;
-    padding-left: 250px;
+    padding-left: 200px;
     text-align: center;
 }
 
@@ -54,12 +55,31 @@ body {
 
 }
 
+.burger {
+  display: none;
+  float: right;
+  margin-right: 5px;
+}
 
-.blockk {
+.overlay {
+  width: 200px;
+  height: 500px;
+  background-color: red;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  
+
+}
+
+.intro {
   width: 700px;
   height: 500px;
   background-color: #000000c4;
-  
   margin-left: 950px;
   margin-top: 50px;
 
@@ -71,7 +91,7 @@ border: solid 1px #7DE2D1;
 border-radius: 40px;
 }
   
-.blockk h1 {
+.intro h1 {
   text-align: center;
   color: white;
   margin-top: 30px;
@@ -79,7 +99,7 @@ border-radius: 40px;
 
 }
 
-.blockk p {
+.intro p {
   font-size: 25px;
   text-align: center;
   color: white;
@@ -87,11 +107,7 @@ border-radius: 40px;
  
 }
 
-.greeting {
-  background-image: url(../images/endgame.jpg);
-  height: 800px;
-  background-image: cover;
-}
+
 
 .space {
   height: 150px;
@@ -106,29 +122,67 @@ border-radius: 40px;
   margin-top: 80px;
 }
 
-.item {
+.card-container {
   height: 600px;
   margin-top: 35px;
+  
  
 }
 
-.child {
+.card {
   width: 80%;
   height: 550px;
-  background-color: #ffa500;
   margin: 0 auto;
+  
+
+  box-shadow: 7px 8px 10px -1px #7DE2D1;
+-webkit-box-shadow: 7px 8px 10px -1px #7DE2D1;
+-moz-box-shadow: 7px 8px 10px -1px #7DE2D1;
+  border: solid black 2px;
 }
 
-.image {
+.img-top {
   width: 100%;
   height: 70%;
-  background-color: red;
+  
 }
 
-.child h5 {
-  float: right;
-  margin-top: 50px;
+.card-body {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(28, 28, 31);
+  position: relative;
+  overflow: hidden;
+  text-overflow: clip; 
 }
+
+.card-body h3 {
+  color: white
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  bottom: 10px;
+}
+
+.card-body h4 {
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.card-body h2 {
+  color: green;
+  float: right;
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+}
+
+
 
 .space-2 {
   height: 500px;
@@ -158,140 +212,6 @@ border-radius: 40px;
 
 
 
-/* #slider{
-    width: 100%;
-    height:800px;
-    box-shadow: 0px 0px 10px 3px;
-    position: relative;
-}
-
-
-div#slider { overflow: hidden; border: 4px solid #131515; }
-div#slider figure img { width: 20%; height:100%;  float: left; ;}
-div#slider figure { 
-	position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  transition: 1s ease-in-out;
-  
- 
-}
-
-.btn-next, .btn-prev{
-  position: absolute;
-  top: 85%;
-  cursor: pointer;
-  color: white;
-  background: #353535;
-  padding: 20px;
-  font-size: 50px;
-  border:none;
-}
-
-.btn-prev{
-  left: 0px;
-}
-.btn-next{
-  right: 0px;
-}
-
-.cycle{
-  width: 100vw;
-  height: 910px;
-  margin-bottom: 100px;
-  
-}
-
-h2 {
-  color: white;
-  text-align: center;
-  border-bottom: solid white 1px ; 
-  padding-top: 150px;
-  font-size: 35px;
-
-}
-
-
-.movie-title .movie-cover {
-  width: 550px;
-  height: 700px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: relative;
-}
-
-
-.movie-cover {
-  width: 550px;
-  height: 700px;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 1s,opacity 0.5s linear;
-  
-
-}
-
-.movie-title:hover .movie-cover{
-  visibility: visible;
-  opacity: 1;
-  cursor: pointer;
- 
-
-}
-
-.movie-title .movie-cover .movie-details {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  bottom: 0;
-  height: 30%;
-  
-
-}
-
-.cover-1 {
-  background-color: red;
-  width: 350px;
-  height: 500px;
-  float: left;
-  margin-left: 150px;
-  margin-top: 150px;
-
-}
-
-.cover-2 {
-  background-image: url(../images/spiderman.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 550px;
-  height: 700px;
-  margin-left: 700px;
-  margin-top: 400px;
-  border: solid 2px white;
-}
-
-.cover-3 {
-  background-color: red;
-  width: 350px;
-  height: 500px;
-  float: right;
-  margin-right: 100px;
-  margin-top: 150px;
-}
-
-.h2 {
-  text-align: center;
- 
- 
-}
-
-h3 {
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 200px;
-} */
 
 
 
