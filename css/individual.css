@@ -1,9 +1,11 @@
 body {
     background-color: #131515;
     width: 100vw;
-    height: 950px;
+    height: 1000px;
     background-image: url(../images/dark\ background.jpg);
     background-size: cover;
+    background-position: bottom;
+    background-repeat: initial;
 }
 
 .LOGO {
@@ -183,10 +185,11 @@ margin-left:5px ;
    color: #000;
 }
 .back-img{
-    height: 500px;
-    background-image: url(../images/img-grad.png);
+    height: 600px;
+    
     background-image: url(../images/beauty&thebeast.jpg);
     background-size: cover;
+   background-position: center;
     
 }
 .hover{
@@ -195,9 +198,49 @@ margin-left:5px ;
     background-size: cover;
   
    
-    height: 500px;
+    height: 600px;
     margin:  0 auto;
     padding: 0 auto;
+}
+/*footer*/
+.footer {
+  width: auto;
+  height: 100px;
+  
+  padding-left: 100px;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.socials {
+ float: right;
+ margin-right: 122px;
+ margin-top: -30px;
+}
+
+.socials a svg {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.socials a svg circle, .socials a svg path
+{
+  stroke: #ffffff;
+}
+
+.socials a svg:hover circle, .socials a svg:hover path
+
+{
+  stroke: #ffa500;
+  cursor: pointer;
 }
 
 
