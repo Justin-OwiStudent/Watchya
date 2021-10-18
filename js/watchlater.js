@@ -10,5 +10,13 @@ $(function(){
           x.style.display = "block";
         }
       }
+
+
+
+
+      // On click event 
+      // setting and then getting the val()
+
+      $(".")
     
 })

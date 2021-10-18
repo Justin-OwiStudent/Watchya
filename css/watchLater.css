@@ -103,11 +103,11 @@ nav {
     height: 500px;
     width: 100%;
     margin: auto;
-    
+    border-bottom: white 2px;
     text-align: center;
 }
 h1 {
     color: white;
-
+   
     
 }
