@@ -26,7 +26,7 @@ $(function(){
      
 
         $(".title").text(film_name);
-        $(".text-genre").text(date + genre );
+        $(".text-genre").text(date  + genre  );
         $(".studio").text( studio );
         $(".genre").text(duration );
         $(".Age-rating").text( rating );

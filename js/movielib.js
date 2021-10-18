@@ -46,7 +46,9 @@ $(document).ready(function() {
 function getCardObj(m) {
 
     var cardObj =
-        "<div class='col-sm-4 col-md-3 col-lg-2'>\
+        " \
+        <div class='col-sm-4 col-md-3 col-lg-2'>\
+        <a href='individual.html?id=" + m.id + "'>\
             <div class='card' onclick=\"goToMovieHomePage(" + m.id + ")\">\
              <div class='img_con'>\
                  <img src='" + "https://image.tmdb.org/t/p/w500" + m.poster_path + " ' class='card-img-top' alt=''>\
@@ -55,7 +57,7 @@ function getCardObj(m) {
                     <h5 class='card-title'>" + m.title + "</h5>\
                     <p class='card-text'><strong>Rating:</strong> " + m.vote_average + "</p>\
              </div>\
-            </div>\
+            </div>\</a>\
         </div>";
 
     return cardObj;
