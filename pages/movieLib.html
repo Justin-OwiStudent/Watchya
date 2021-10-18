@@ -30,240 +30,53 @@
         </ul>
      </nav>
 
-     <!--Movie Card Rows-->
-     <div class="row recommendedrow">
+     <!--filter-->
+     <div class="filtersearchcontainer">
+        <div class="row">
+            <div class="cell col-1">
+                Filter by:
+            </div>
+            <div class="cell col-1">
+                Genre
+            </div>
+            <div class="cell col-1">
+                Year
+            </div>
+            <div class="cell col-1">
+                Rating
+            </div>
+            <div class="cell col-4">
+
+            </div>
+            <div class="cell col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Movie Library" id="searchtxt" onkeyup="checkDisplay()">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" onclick="search()">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Movie Rows-->
+    <div id="nonsearchDisplay">
         <h1>Recommended</h1>
-    </div>
-
-    <div class="row recommendedrow">
-
-        <div class="scroll_left">
-
+        <div class="row recommendedrow">
         </div>
-
-        <div class='col-sm-4 col-md-3 col-lg-2'>
-            <div class='card'>
-                <div class='img_con'>
-                    <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>Movie Name goes here</h5>
-                    <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                    <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                </div>
-            </div>
+        <div class="row recommendedrow">
         </div>
-
-        <div class='col-sm-4 col-md-3 col-lg-2'>
-            <div class='card'>
-                <div class='img_con'>
-                    <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>Movie Name goes here</h5>
-                    <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                    <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                </div>
-            </div>
-        </div>
-
-        <div class='col-sm-4 col-md-3 col-lg-2'>
-            <div class='card'>
-                <div class='img_con'>
-                    <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>Movie Name goes here</h5>
-                    <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                    <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                </div>
-            </div>
-        </div>
-
-        <div class='col-sm-4 col-md-3 col-lg-2'>
-            <div class='card'>
-                <div class='img_con'>
-                    <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>Movie Name goes here</h5>
-                    <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                    <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                </div>
-            </div>
-        </div>
-
-        <div class='col-sm-4 col-md-3 col-lg-2'>
-            <div class='card'>
-                <div class='img_con'>
-                    <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>Movie Name goes here</h5>
-                    <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                    <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll_right">
-
-        </div>
-    </div>
-
-    <div class="row trendingrow">
         <h1>Trending</h1>
-        <div class="row recommendedrow">
-
-            <div class="scroll_left">
-
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scroll_right">
-
-            </div>
+        <div class="row trendingrow">
+        </div>
+        <h1>New Arrivals</h1>
+        <div class="row newarrivalsrow">
         </div>
     </div>
-    <div class="row newarrivalsrow">
-        <h1>New Arrivals</h1>
-        <div class="row recommendedrow">
-
-            <div class="scroll_left">
-
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class='col-sm-4 col-md-3 col-lg-2'>
-                <div class='card'>
-                    <div class='img_con'>
-                        <img src='../images/endgame.jpg' class='card-img-top' alt=''>
-                    </div>
-                    <div class='card-body'>
-                        <h5 class='card-title'>Movie Name goes here</h5>
-                        <p class='card-text'><strong>Starring:</strong> Some actors</p>
-                        <a href='https://developers.themoviedb.org/' class='btn btn-primary'>Action Button Placeholder</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scroll_right">
-
+    <div id="searchDisplay">
+        <div class="card searchCard">
+            <div class="card-body searchcardResults">
             </div>
         </div>
     </div>
