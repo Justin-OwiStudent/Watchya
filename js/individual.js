@@ -4,7 +4,7 @@ $(function(){
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
 
-    const url = 'https://api.themoviedb.org/3/movie/550?api_key=60d58f5803d2a10a9d7bc0427dbc5023' + id;
+    const movieDetailUrl = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
 
     $.getJSON(url, function(result){
 
