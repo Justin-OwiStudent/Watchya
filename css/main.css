@@ -73,8 +73,8 @@ body {
     display: block;
   }
   
-
 }
+
 
 .intro {
   width: 700px;
@@ -114,7 +114,7 @@ border-radius: 40px;
 }
 
 .space h1 {
-  
+
   color: white;
   border-bottom: white 2px solid;
   width: 300px;
@@ -135,10 +135,17 @@ border-radius: 40px;
   margin: 0 auto;
   
 
-  box-shadow: 7px 8px 10px -1px #7DE2D1;
+  /* box-shadow: 7px 8px 10px -1px #7DE2D1;
 -webkit-box-shadow: 7px 8px 10px -1px #7DE2D1;
--moz-box-shadow: 7px 8px 10px -1px #7DE2D1;
+-moz-box-shadow: 7px 8px 10px -1px #7DE2D1; */
   border: solid black 2px;
+  cursor: pointer;
+
+}
+
+.card:hover {
+  box-shadow: 7px 8px 10px -1px #7DE2D1, 7px 8px 10px -1px #7DE2D1, 7px 8px 10px -1px #7DE2D1;
+  transition: all 0s ease-in-out;
 }
 
 .img-top {
@@ -166,6 +173,16 @@ border-radius: 40px;
   background-color: red;
   position: absolute;
   bottom: 10px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+
+ 
+  box-shadow: 13px 12px 6px -2px rgba(116, 51, 51, 0.59),13px 12px 6px -2px rgba(0,0,0,0.59), 13px 12px 6px -2px rgba(0,0,0,0.59);
+  transition: all 0s ease-in-out;
+
 }
 
 .card-body h4 {
