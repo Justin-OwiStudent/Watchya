@@ -1,9 +1,11 @@
 body {
     background-color: #131515;
     width: 100vw;
-    height: 950px;
+    height: 1000px;
     background-image: url(../images/dark\ background.jpg);
     background-size: cover;
+    background-position: bottom;
+    background-repeat: initial;
 }
 
 .LOGO {
@@ -42,9 +44,12 @@ body {
 
 .left{
     background-color:#131515;
-    height: 100vh;
- background-color: rgba(184, 147, 147, 0);
+    height: auto;
+ 
  color: rgb(255, 255, 255);
+ background-color: #0000006f;
+ border: solid 1px #7DE2D1;
+ border-radius: 40px;
 
 }
 .right{
@@ -81,21 +86,20 @@ body {
 }
 .open{
     height: 185px;
-    background-color: rgba(184, 147, 147, 0);
+    
     text-align: center;
     padding-top: 20px;
 }
 
 .footer{
    
-    background-color: darkorchid;
+    background-color: rgba(184, 147, 147, 0);
     height: 100px;
 }
 .left-child-one{
    
-    height: 150px;
-    background-color: rgba(78, 76, 76, 0.4);
-    border-radius: 10px;
+    height: 170px;
+   
     
 }
 .text-genre{
@@ -131,20 +135,149 @@ body {
 margin-left:5px ;
 }
 .left-child-two{
+ 
+    height: auto;
+    
    
-    height: 170px;
-    background-color: rgb(255, 127, 249);
+}
+.descriptin{
+  width: 90%;  
+ 
+  height: auto;
+  word-wrap: break-word
 }
 .left-child-three{
     
-    height: 200px;
-    background-color: rgb(255, 193, 127);
+    height: auto;
+ 
 }
 .Sep-line{
-    background-color: honeydew;
+    background-color: #dfdfdf;
     width: 400px;
     height: 3px;
    
 
   
+}#thum-up{
+ float: left;
+ margin-right: 15px;
 }
+.Button-block{
+    float: right;
+ 
+    width: 450px;
+    height: auto;
+    padding: 20px;
+}
+.Watch-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: darkslategrey;
+    color: honeydew;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.Watch-button:hover{
+   background-color: #7DE2D1;
+   color: #000;
+}
+
+.Watchlater-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+   text-decoration: underline;
+    color: honeydew;
+    text-align: center;
+    margin-top: 10px;
+ 
+    
+   
+}
+.Watchlater-button:hover{
+   
+   color: rgb(78, 203, 231);
+}
+
+.back-img{
+    height: 600px;
+    
+    background-image: url(../images/beauty&thebeast.jpg);
+    background-size: cover;
+   background-position: center;
+    
+}
+.hover{
+    background-image: url(../images/img-grad.png);
+    
+    background-size: cover;
+  
+   
+    height: 600px;
+    margin:  0 auto;
+    padding: 0 auto;
+}
+/*footer*/
+.footer {
+  width: auto;
+  height: 100px;
+  
+  padding-left: 100px;
+  padding-top: 50px;
+  margin-top: 100px;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.socials {
+ float: right;
+ margin-right: 122px;
+ margin-top: -30px;
+}
+
+.socials a svg {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.socials a svg circle, .socials a svg path
+{
+  stroke: #ffffff;
+}
+
+.socials a svg:hover circle, .socials a svg:hover path
+
+{
+  stroke: #ffa500;
+  cursor: pointer;
+}
+.cast{
+    float: left;
+    padding-top: 20px;
+   
+    width: 15%;
+    height: auto;
+    word-wrap: break-word
+}
+.two-buttons{
+  
+     height: 100px;
+     width: 210px;
+     float: right ;
+    padding-top: 10px; ;
+    margin-right: 10%;
+}
+.thum-block{
+    float:right ;
+    margin-right: 60px;
+  
+}
+
