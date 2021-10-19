@@ -111,3 +111,9 @@ h1 {
    
     
 }
+/* styling for buttons */
+.add-watch {
+  height: 20px;
+  width: 20px;
+  float: right;
+} 
