@@ -170,7 +170,7 @@ border-radius: 40px;
 .btn {
   width: 150px;
   height: 50px;
-  background-color: red;
+  background-color: rgb(136, 2, 2);
   position: absolute;
   bottom: 10px;
   cursor: pointer;
@@ -178,17 +178,26 @@ border-radius: 40px;
 }
 
 .btn:hover {
-
- 
-  box-shadow: 13px 12px 6px -2px rgba(116, 51, 51, 0.59),13px 12px 6px -2px rgba(0,0,0,0.59), 13px 12px 6px -2px rgba(0,0,0,0.59);
+  border: #7DE2D1 solid 1px;
   transition: all 0s ease-in-out;
+  background-color: rgb(19, 0, 0);
+  color: white;
+
+  /* box-shadow: 13px 12px 6px -2px rgba(116, 51, 51, 0.59),13px 12px 6px -2px rgba(0,0,0,0.59), 13px 12px 6px -2px rgba(0,0,0,0.59);
+  transition: all 0s ease-in-out; */
 
 }
 
 .card-body h4 {
   font-size: 20px;
   text-align: center;
-  
+  padding: 5px;
+}
+
+.add {
+  position: absolute;
+  bottom: 15px;
+  right: 20%;
 }
 
 .card-body h2 {
