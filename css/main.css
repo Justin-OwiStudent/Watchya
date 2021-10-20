@@ -45,11 +45,22 @@ h5 {
 
 }
 
+.nav-link-log {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.nav-link-log:hover {
+  color: black;
+}
+
 .navbar-light .navbar-toggler {
   color: rgb(0 0 0 / 55%);
   border-color: #7DE2D1;
   background-color: white;
 }
+
 
 
 .navbar-toggler {
@@ -92,7 +103,7 @@ h5 {
 
   color: white;
   border-bottom: white 2px solid;
-  width: 300px;
+  width: 330px;
   margin-left: 50px;
   margin-top: 80px;
 }
@@ -119,10 +130,11 @@ h5 {
 }
 
 .card:hover {
+  box-shadow: 13px 12px 21px -7px #7DE2D1;
+-webkit-box-shadow: 13px 12px 21px -7px #7DE2D1;
+-moz-box-shadow: 13px 12px 21px -7px #7DE2D1;
+
   
-  box-shadow: 13px 10px 43px -2px #7DE2D1;
--webkit-box-shadow: 13px 10px 43px -2px #7DE2D1;
--moz-box-shadow: 13px 10px 43px -2px #7DE2D1;
   transition: all 0s ease-in-out;
 }
 
@@ -154,7 +166,7 @@ h5 {
   position: absolute;
   bottom: 10px;
   cursor: pointer;
-
+  border-radius: 15px;
 }
 
 .btn:hover {
@@ -178,7 +190,10 @@ h5 {
   position: absolute;
   bottom: 15px;
   right: 10px;
+ 
 }
+
+
 
 .card-body h2 {
   color: green;
@@ -197,7 +212,7 @@ h5 {
   color: white;
   text-align: center;
   border-bottom: white 2px solid;
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -206,7 +221,7 @@ h5 {
   color: white;
   text-align: center;
   font-size: 30px;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 100px;
 }

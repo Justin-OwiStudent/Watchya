@@ -17,7 +17,7 @@ function login() {
 
 
 $(function () {
-
+ 
 
     $(".submit-btn").on("click", function () {
 
@@ -26,7 +26,7 @@ $(function () {
 
         url = "https://owmakerspace.co.za/users/data.json";
 
-        $.getJSON(url, function (result) {
+        $.getJSON(url, function (result) {            
             console.log(result.users);
 
             for (i = 0; i < result.users.length; i++) {
@@ -36,7 +36,8 @@ $(function () {
                     if (result.users[i].password === password) {
                         
                         if(result.users[i].account === "active") {
-                            window.location.href = "#";
+                            window.location.href = "../Watchya/home.html";                           
+                            $(".nav-link-log").text("logout");
                             sessionStorage.setItem("username", username);
                         } else {
                              $(".message").css("background-color", "red");
