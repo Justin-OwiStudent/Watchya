@@ -9,131 +9,71 @@ body {
     width: 100vw;
     
 }
+.LOGO {
+  width: 50px;
+  height: 50px;
+  
+  
+}
+
+h5 {
+font-size: 50px;
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color: white;
-  padding-right: 50px;
-  font-size: 20px;
+color: white;
+padding-right: 50px;
+font-size: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white;
-  padding-right: 50px;
-  font-size: 20px;
+color: white;
+padding-right: 50px;
+font-size: 20px;
 
+}
+
+.nav-link-log {
+color: white;
+padding-right: 50px;
+font-size: 20px;
+}
+
+.nav-link-log:hover {
+color: black;
 }
 
 .navbar-light .navbar-toggler {
-  color: rgb(0 0 0 / 55%);
-  border-color: #7DE2D1;
-  background-color: white;
+color: rgb(0 0 0 / 55%);
+border-color: #7DE2D1;
+background-color: white;
 }
+
 
 
 .navbar-toggler {
-  color: white;
-}
-
-.LOGO {
-    width: 150px;
-    height: 150px;
-    float: left;
-    margin-left: 100px;
-    margin-bottom: 30px;
-}
- 
-.nav-list {
-    list-style: none;
-    float: left;
-    margin-top: 60px;
-    margin-left: 5%;
-
-}
-
-.nav-list li {
-    display: inline-block;
-    margin-left: 150px;
-}
-
-.nav-list li a {
-    font-size: 30px;
-    color: #dfdfdf;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-
-.nav-list li a:hover {
-   border-bottom: #7DE2D1 solid 4px;
-
-}
-nav {
-    
-    height: 20vh;
+color: white;
 }
 /* END OF STYLING FOR THE HEADER AND NAV */
 
 
 
-
-/* HAMBURGER MENU STYLING */
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
-/* END OF HAMBURGER MENU STYLING */
-
-
 .header {
-    height: 200px;
+    height: 100vh;
     width: 100%;
     margin: auto;
     border-bottom: white 2px;
     text-align: center;
+    padding-top: 100px;
 }
 h1 {
     color: white;
-    font-size: 50px;
-    
+    font-size: 50px;   
 }
+
+
+
+
 p {
   color: white;
   font-size: x-large;
