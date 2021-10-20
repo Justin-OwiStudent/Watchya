@@ -86,7 +86,7 @@ function goToMovieHomePage(movieId) {
         window.open(homePage, "_blank");
     });
 }
-
+-
 function search() {
     var searchVal = $("#searchtxt").val();
 

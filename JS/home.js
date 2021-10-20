@@ -25,7 +25,10 @@ $(document).ready(function () {
                </div>\
                <div class='card-body'>\
                   <h3>" + result.results[i].title + "</h3>\
-                  <div class='btn'><h4> Watch Now </h4>\
+                  <div class='btn'><h4> Watch Now</h4>\
+                  </div>\
+                  <div class='add'>\
+                  <img src= ../Watchya/images/add.png>\
                   </div>\
                   <h2> " + result.results[i].vote_average + " </h2>\
                </div>\
