@@ -9,6 +9,29 @@ body {
     width: 100vw;
     
 }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(0 0 0 / 55%);
+  border-color: #7DE2D1;
+  background-color: white;
+}
+
+
+.navbar-toggler {
+  color: white;
+}
 
 .LOGO {
     width: 150px;

@@ -34,19 +34,24 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".movie").click(function(){
+      $(".add").click(function(){
 
-        var json_entry = {'title': titleField.val(),
-                  'image': $(".img-top").val(),
-                  'content': contentField.val(),
-                  'location': location};
+        // var json_entry = {'title': titleField.val(),
+        //           'image': $(".movie-cards") 
+        //           };
 
-        var movieObj = JSON.stringify(json_entry);
-        localStorage.setItem("movieTest", movieObj);
+        // var movieObj = JSON.stringify(json_entry);
+        // localStorage.setItem("movieTest", movieObj);
 
-        var image = localStorage.getItem("movieTest");
-        var obj = JSON.parse(image);
-        document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
+        // var image = localStorage.getItem("movieTest");
+        // var obj = JSON.parse(image);
+        // document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
+
+
+        var movie = [ 
+
+          
+        ];
 
       });
 
