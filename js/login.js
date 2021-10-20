@@ -39,20 +39,20 @@ $(function () {
                             window.location.href = "#";
                             sessionStorage.setItem("username", username);
                         } else {
-                             $(".message").css("background-color", "orange");
+                             $(".message").css("background-color", "red");
                             $(".message").text("Your account has been susspenced! contact support");                          
                         }
 
 
                     } else {
-                        $(".message").css("background-color", "tomato");
+                        $(".message").css("background-color", "red");
                         $(".message").text("Your email or password does not match");
                     }
 
 
 
                 } else {
-                   $(".message").css("background-color", "tomato");
+                   $(".message").css("background-color", "red");
                    $(".message").text("Your email or password does not match");
                 } // checking for user
 
