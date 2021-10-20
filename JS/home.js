@@ -25,7 +25,7 @@ $(document).ready(function () {
                </div>\
                <div class='card-body'>\
                   <h3>" + result.results[i].title + "</h3>\
-                 <a href='pages/individual.html?id=" + result.results.id + "'> <div class='btn'>\<h4> Watch Now</h4>\
+                  <a href='pages/individual.html?id=" + result.results[i].id + "'> <div class='btn'>\<h4> Watch Now</h4>\
                   </div>\</a>\
                   <div class='add'>\
                   <img src= ../Watchya/images/added.svg>\
