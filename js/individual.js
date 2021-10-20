@@ -4,21 +4,21 @@ $(function(){
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
 
-    const movieDetailUrl = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
+    const url ='https://api.themoviedb.org/3/movie/popular?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&page=1' + id;
 
     $.getJSON(url, function(result){
 
         console.log(result);
 
-        film_name = result.original_title;
-        launch_name = result.overview;
+        film_name = result.result.original_title;
+        film_name =  result.result.overview;
         postrer = result.poster_path;
-        genre = result.genres.name;
-        rating = result.genres.name.id;
-        bgimg = result.backdrop_path;
-       studio = result.production_companies.name;
-       date = result.release_date;
-      duration = result.runtime;
+        genre =  result.result.genres.name;
+        rating =  result.result.genres.name.id;
+        bgimg =  result.result.backdrop_path;
+       studio =  result.result.production_companies.name;
+       date =  result.result.release_date;
+      duration =  result.result.runtime;
 
        
        
