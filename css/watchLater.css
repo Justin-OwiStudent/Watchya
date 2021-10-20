@@ -100,7 +100,7 @@ nav {
 
 
 .header {
-    height: 500px;
+    height: 200px;
     width: 100%;
     margin: auto;
     border-bottom: white 2px;
@@ -108,12 +108,18 @@ nav {
 }
 h1 {
     color: white;
-   
+    font-size: 50px;
     
 }
-/* styling for buttons */
-.add-watch {
-  height: 20px;
-  width: 20px;
-  float: right;
-} 
+p {
+  color: white;
+  font-size: x-large;
+}
+.movie-cards {
+
+  width: 40px;
+  background-color: white;
+  height: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
