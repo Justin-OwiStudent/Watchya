@@ -2,23 +2,25 @@ $(function(){
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const id = urlParams.get('id');
+    const id = urlParams.get('result.results[i].id');
 
     const url ='https://api.themoviedb.org/3/movie/popular?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&page=1' + id;
 
     $.getJSON(url, function(result){
 
-        console.log(result);
+        console.log( result);
 
-        film_name = result.result.original_title;
-        film_name =  result.result.overview;
+        film_name =  result.original_title;
+        film_desc =  result.overview;
         postrer = result.poster_path;
-        genre =  result.result.genres.name;
-        rating =  result.result.genres.name.id;
-        bgimg =  result.result.backdrop_path;
-       studio =  result.result.production_companies.name;
-       date =  result.result.release_date;
-      duration =  result.result.runtime;
+         rating = result.vote_average;
+         votes = result.vote_count;
+         ageRating =  result.adult;
+         bgimg = result.backdrop_path;
+         language = result.original_language;
+         date =   result.release_date;
+        duration = result.runtime;
+        
 
        
        
@@ -26,23 +28,23 @@ $(function(){
      
 
         $(".title").text(film_name);
-        $(".text-genre").text(date  + genre  );
-        $(".studio").text( studio );
-        $(".genre").text(duration );
-        $(".Age-rating").text( rating );
+        $(".Time").text(date);
+        $(".Speak").text( language );
+        $(".Genre").text(duration );
+        $(".Age-rating").text( ageRating );
 
-        $(".success_fail").css(" background-image","bgimg");
+        $(" back-img").css(" background-image",bgimg);
+
+        $(".Rating").text(+" Rating:"+ rating);
+        $(".Vote-ammount").text( votes + "Votes");
 
 
       
 
         $(".Movie-picture").attr("src", postrer);
 
-        if(film_desc[1]=== null){
-            $(".descriptin").text("There where no details found for this film");
-        } else {
-            $(".descriptin").text ( film_desc);
-        }
+        $(".descriptin").text ( film_desc);
+    
 
     });
 });
