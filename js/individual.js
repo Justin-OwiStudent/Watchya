@@ -59,20 +59,9 @@ $(function(){
         $(".Rating").text(" Rating: "+ rating);
         $(".Vote-ammount").text(Prod );
 
-
-      
-
-       
-      
-    
-
         $(".descriptin").text ( film_desc );
 
-    
-
-    });
-    
-    $("burger").on(function () {
+        $("burger").on(function () {
         $(".overlay").css("display", "block")
       });
       $(".Watch-button").click(function(){
@@ -80,6 +69,33 @@ $(function(){
         alert("Your movie has been added to the watch later page");
         
     });
+
+    $(".Watch-button").on("click", function(){
+
+       
+
+  
+        var Film_name = result.original_title
+        var Rating = result.vote_average
+        var Poster = result.poster_path
+       // var telNum = $().val();
+      //  var pass1 = $().val();
+       // var pass2 = $().val();
+    
+        console.log(Film_name);
+        console.log(Rating);
+        console.log(Poster);
+       // console.log(telNum);
+      // console.log(pass1);
+       // console.log(pass2);
+    
+        
+       sessionStorage.setItem("name", Film_name); 
+       sessionStorage.setItem("rating", Rating);
+       sessionStorage.setItem("poster", Poster);
+         
+    
+      });
  
 
 
@@ -87,3 +103,7 @@ $(function(){
     
    
 });
+
+
+    });
+    
