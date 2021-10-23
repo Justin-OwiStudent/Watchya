@@ -121,9 +121,15 @@ h5 {
 }
 .Movie-picture{
     height: 89vh;
-  
+  background-color: blueviolet;
     width:400px;
     margin-left: 20%;
+    background-size: cover;
+    background-image: url(../images/beauty&thebeast.jpg);
+    border-radius: 10px;
+    box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
+-webkit-box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
+-moz-box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
 
     
 
@@ -166,6 +172,8 @@ h5 {
   text-transform: capitalize;
     float: left;
     margin-left: 2%;
+    font-size: 50px;
+   
    
   
    
