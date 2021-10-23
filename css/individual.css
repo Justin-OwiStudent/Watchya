@@ -8,7 +8,7 @@ body {
     background-repeat: initial;
 }
 
-.LOGO {
+.LOGO-B {
     width: 150px;
     height: 150px;
     float: left;
@@ -17,6 +17,52 @@ body {
     
 }
  
+.LOGO {
+    width: 50px;
+    height: 50px;
+    
+    
+}
+ 
+h5 {
+  font-size: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+
+}
+
+.nav-link-log {
+  color: white;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+.nav-link-log:hover {
+  color: black;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(0 0 0 / 55%);
+  border-color: #7DE2D1;
+  background-color: white;
+}
+
+
+
+.navbar-toggler {
+  color: white;
+}
+
 .nav-list {
     list-style: none;
     float: left;
@@ -160,7 +206,8 @@ margin-left:5px ;
   
 }#thum-up{
  float: left;
- margin-right: 15px;
+ margin-right: 25px;
+ 
 }
 .Button-block{
     float: right;
@@ -170,7 +217,7 @@ margin-left:5px ;
     padding: 20px;
 }
 .Watch-button{
-    width: 200px;
+    width: 250px;
     height: 50px;
     border-radius: 10px;
     background-color: darkslategrey;
@@ -184,41 +231,33 @@ margin-left:5px ;
    color: #000;
 }
 
-.Watchlater-button{
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-   text-decoration: underline;
-    color: honeydew;
-    text-align: center;
-    margin-top: 10px;
- 
-    
-   
-}
-.Watchlater-button:hover{
-   
-   color: rgb(78, 203, 231);
-}
+
 
 .back-img{
     height: 600px;
-    
-    background-image: url(../images/beauty&thebeast.jpg);
+   
     background-size: cover;
    background-position: center;
     
 }
 .hover{
-    background-image: url(../images/img-grad.png);
-    
+
+   
     background-size: cover;
-  
+   background-image: url(../images/beauty&thebeast.jpg);
    
     height: 600px;
     margin:  0 auto;
     padding: 0 auto;
 }
+.b-img{
+    height: 600px;
+   
+    background-size: cover;
+   background-position: center;
+    background-image: url(../images/img-grad.png);
+}
+
 /*footer*/
 .footer {
   width: auto;
@@ -234,6 +273,8 @@ margin-left:5px ;
   font-size: 18px;
   font-family: 'RocknRoll One', sans-serif;
 }
+
+
 
 .socials {
  float: right;
@@ -273,11 +314,14 @@ margin-left:5px ;
      width: 210px;
      float: right ;
     padding-top: 10px; ;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 .thum-block{
     float:right ;
     margin-right: 60px;
+    
+    margin-top: 20px;
+
   
 }
 
