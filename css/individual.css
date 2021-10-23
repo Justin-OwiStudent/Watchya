@@ -8,15 +8,6 @@ body {
     background-repeat: initial;
 }
 
-.LOGO-B {
-    width: 150px;
-    height: 150px;
-    float: left;
-    
-    margin-bottom: 30px;
-    
-}
- 
 .LOGO {
     width: 50px;
     height: 50px;
@@ -63,40 +54,25 @@ h5 {
   color: white;
 }
 
-.nav-list {
-    list-style: none;
-    float: left;
-    margin-top: 60px;
-}
-
-.nav-list li {
-    display: inline-block;
-    margin: 0 auto;
-    padding-left: 100px;
-}
-
-.nav-list li a {
-    font-size: 30px;
-    color: #dfdfdf;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-
-.nav-list li a:hover {
-   border-bottom: #7DE2D1 solid 4px;
-
-}
 
 
 .left{
+   
     background-color:#131515;
-    height: auto;
+    height: 700px;
+
+ 
+
+}
+.out-block{
+    margin-top: 50px;
+    background-color:#131515;
+    height: 640px;
  
  color: rgb(255, 255, 255);
  background-color: #0000006f;
  border: solid 1px #7DE2D1;
  border-radius: 40px;
-
 }
 .right{
     background-color: rgba(184, 147, 147, 0);
@@ -131,13 +107,15 @@ h5 {
 -webkit-box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
 -moz-box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
 
+   margin-top: 50px;
+
     
 
    
 
 }
 .open{
-    height: 185px;
+    height: 80px;
     
     text-align: center;
     padding-top: 20px;
@@ -150,29 +128,33 @@ h5 {
 }
 .left-child-one{
    
-    height: 170px;
+    height: 190px;
+    margin-top: 50px;
+
    
     
 }
 .Date{
   text-align: left;  
-  width: 150px;
+  width: 160px;
   height: 50px;
  
   float: left;
-  padding: 15px;
+  padding: 35px;
 
 }
 .Dur{
     float: left;
-    padding-top: 20px;
+    padding-top: 36px;
 }
 
 .title{
   text-transform: capitalize;
     float: left;
     margin-left: 2%;
-    font-size: 50px;
+    font-size: 30px;
+    text-decoration-line:underline;
+    padding-top: 20px;
    
    
   
@@ -181,16 +163,17 @@ h5 {
 .Speak{
   
     width: 150px;
-    margin-left: 10px;
+    margin-left: 15px;
    
 }
 .Age-rating{
     
-margin-left:5px ;
+margin-left:15px ;
 }
 .left-child-two{
  
     height: auto;
+    padding-left: 10px;
     
    
 }
@@ -201,8 +184,9 @@ margin-left:5px ;
   word-wrap: break-word
 }
 .left-child-three{
-    
+    padding-top: 30px;
     height: auto;
+    padding-left: 10px;
  
 }
 .Sep-line{
@@ -252,6 +236,7 @@ margin-left:5px ;
 
    
     background-size: cover;
+    background-position: center;
    background-image: url(../images/beauty&thebeast.jpg);
    
     height: 600px;

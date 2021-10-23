@@ -66,7 +66,7 @@ $(function(){
         $(".Movie-picture").css("background-image", "url(" + bgimg + ")");
     
 
-        $(".descriptin").text ( film_desc);
+        $(".descriptin").text ( film_desc );
 
     
 
@@ -75,6 +75,8 @@ $(function(){
     $("burger").on(function () {
         $(".overlay").css("display", "block")
       });
+ 
+
 
  
     
