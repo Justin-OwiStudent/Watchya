@@ -1,7 +1,7 @@
 body {
     background-color: #131515;
     width: 100vw;
-    height: 1000px;
+    height: 900px;
     background-image: url(../images/dark\ background.jpg);
     background-size: cover;
     background-position: bottom;
@@ -17,6 +17,10 @@ body {
  
 h5 {
   font-size: 50px;
+  
+}
+a {
+    color: aliceblue;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -173,7 +177,7 @@ margin-left:15px ;
 .left-child-two{
  
     height: auto;
-    padding-left: 10px;
+    padding-left: 20px;
     
    
 }
@@ -186,7 +190,7 @@ margin-left:15px ;
 .left-child-three{
     padding-top: 30px;
     height: auto;
-    padding-left: 10px;
+    padding-left: 20px;
  
 }
 .Sep-line{
