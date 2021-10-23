@@ -50,9 +50,9 @@ $(function(){
         $(".Dur").text( studio);
    
 
-        $(".hover").css("background-image", "url(" + bgimg + ")");
-        $(".hover").css("background-image", "url( ../images/Venom.jpg )");
-       // html.push(`<img src='${"../images/Venom.jpg"[4]}'/>`) 
+        $(".hover").css("background-image", "url(.." + bgimg + ")");
+        //$(".hover").css("background-image", "url( ../images/Venom.jpg )");
+         $(".Movie-picture").css("background-image", "url(" + bgimg + ")");
 
         
 
@@ -63,7 +63,7 @@ $(function(){
       
 
        
-        $(".Movie-picture").css("background-image", "url(" + bgimg + ")");
+      
     
 
         $(".descriptin").text ( film_desc );
