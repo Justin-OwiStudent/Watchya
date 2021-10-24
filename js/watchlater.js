@@ -34,26 +34,29 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".add").click(function(){
+      $(".space-2").click(function(){
 
-        // var json_entry = {'title': titleField.val(),
-        //           'image': $(".movie-cards") 
-        //           };
+        console.log("morning")
+      //    var json_entry = {'title': titleField.val(),
+      //             'image': $(".movie-cards").val(), 
+      //              };
 
-        // var movieObj = JSON.stringify(json_entry);
-        // localStorage.setItem("movieTest", movieObj);
+      //   var movieObj = JSON.stringify(json_entry);
+      //   localStorage.setItem("movieTest", movieObj);
 
-        // var image = localStorage.getItem("movieTest");
-        // var obj = JSON.parse(image);
-        // document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
+      //   var image = localStorage.getItem("movieTest");
+      //   var obj = JSON.parse(image);
+      //    document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
 
 
-        var movie = [ 
+      //   var movie = [ 
 
           
-        ];
+      //   ];
 
-      });
+        var title = document.getElementsByClassName(".card-body");
+
+       });
 
 
     
