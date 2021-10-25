@@ -21,16 +21,17 @@ $(document).ready(function () {
         "<div class='col-12 col-md-6 col-lg-2 col-xl-2  card-container'>\
             <div class='card'>\
                <div class='img-top'>\
-               <img src='https://image.tmdb.org/t/p/original"+ result.results[i].poster_path + "'class='card-img-top img-fluid' alt=''>\
+               <img src='https://image.tmdb.org/t/p/original"+ result.results[i].poster_path + "' id='click-this' class='card-img-top img-fluid' alt=''>\
                </div>\
                <div class='card-body'>\
                   <h3>" + result.results[i].title + "</h3>\
                   <a href='pages/individual.html?id=" + result.results[i].id + "'> <div class='btn'>\<h4> Watch Now</h4>\
                   </div>\</a>\
                   <div class='add'>\
-                  <img src= ../Watchya/images/added.svg>\
+                  <img class='add-img' src= ../Watchya/images/added.svg>\
                   </div>\
                   <h2> " + result.results[i].vote_average + " </h2>\
+                  <p class='hidden-id'>"+ result.results[i].id  +"</p>\
                </div>\
             </div>\
          </div>"

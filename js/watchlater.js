@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  console.log("ready");
-
+  console.log("watch later");
+  
     // HAMBURGER MENU //
     function myFunction() {
           var x = document.getElementById("myLinks");
@@ -34,26 +34,13 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".add").click(function(){
+      $(".add").on("click", function(){
 
-        // var json_entry = {'title': titleField.val(),
-        //           'image': $(".movie-cards") 
-        //           };
+        console.log("working");
 
-        // var movieObj = JSON.stringify(json_entry);
-        // localStorage.setItem("movieTest", movieObj);
+        alert("working");
 
-        // var image = localStorage.getItem("movieTest");
-        // var obj = JSON.parse(image);
-        // document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
-
-
-        var movie = [ 
-
-          
-        ];
-
-      });
+       });
 
 
     
