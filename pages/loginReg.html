@@ -11,7 +11,12 @@
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  
+
   <script src="../JS/login.js">    </script>
+  
+
   <!-- CSS -->
   <link rel="stylesheet" href="../css/loginReg.css">
   <!--  -->
@@ -23,36 +28,51 @@
 </head>
 
 <body>
-  <nav>
-    <a href="../home.html">
-      <img class="LOGO" src="../images/LOGO.svg">
-    </a>
-  </nav>
+ 
+
+
+  <div  class="hero">
+
+    <nav>
+      <a href="../home.html">
+        <img class="LOGO" src="../images/LOGO.svg">
+      </a>
+    </nav>
+
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn-log" onclick="login()">Log in</button>
+            <button type="button" class="toggle-btn-reg" onclick="register()">register</button>
+        </div>
+        <div class="social-icons">
+            <img src="../images/fb.png">
+            <img src="../images/gp.png">
+            <img src="../images/tw.png">
+            
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="username" placeholder="Username" required>
+            <input type="text" class="password" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box" ><span>Remember password</span>
+            <button type="submit" class="submit-btn">log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="text" class="input-field" placeholder="Confirm Password" required>
+
+            <input type="checkbox" class="check-box" ><span>I agree to the Terms & Conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+  
+        </form>
+        <div class="message"></div>
+    </div>
+    
+  </div>
 </body>
 
-<div class="form-container">
-  <div class="left">
-    <form autocomplete="on"></form>
-    <h1>Login</h1>
-    <input class="first" type="text" placeholder="First Name" autofocus required>
-    <input class="last" type="text" placeholder="Last Name" required>
-    <input class="pass1" type="password" placeholder="Select a Password" required>
-    <div class="button">Login</div>
-    </form>
-  </div> <!-- left -->
-  <div class="right">
-    <h1>Register</h1>
-    <input class="first" type="text" placeholder="First Name" autofocus required>
-    <input class="last" type="text" placeholder="Last Name" required>
-    <input class="email" type="email" placeholder="Your Email" required>
-    <input class="pass1" type="password" placeholder="Select a Password" required>
-    <input class="pass2" type="password" placeholder="Confirm Password" required>
-    <div class="button">Submit Form</div>
-  </div><!-- right -->
-  <div class="panel">
-    <div class="btn">Click to Slide</div>
-  </div>
 
-</div>
 
 </html>

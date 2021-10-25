@@ -1,38 +1,88 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+/* STYLING FOR THE HEADER AND NAV */
 body {
     background-color: #131515;
     width: 100vw;
     
 }
-
 .LOGO {
-    width: 150px;
-    height: 150px;
-    float: left;
-    margin-left: 100px;
-    margin-bottom: 30px;
-}
- 
-.nav-list {
-    list-style: none;
-    float: left;
-    margin-top: 60px;
-    margin-left: 5%;
-
+  width: 50px;
+  height: 50px;
+  
+  
 }
 
-.nav-list li {
-    display: inline-block;
-    margin-left: 150px;
+h5 {
+font-size: 50px;
 }
 
-.nav-list li a {
-    font-size: 30px;
-    color: #dfdfdf;
-    text-decoration: none;
-    padding-bottom: 10px;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+color: white;
+padding-right: 50px;
+font-size: 20px;
 }
 
-.nav-list li a:hover {
-   border-bottom: #7DE2D1 solid 4px;
+.navbar-light .navbar-nav .nav-link {
+color: white;
+padding-right: 50px;
+font-size: 20px;
 
+}
+
+.nav-link-log {
+color: white;
+padding-right: 50px;
+font-size: 20px;
+}
+
+.nav-link-log:hover {
+color: black;
+}
+
+.navbar-light .navbar-toggler {
+color: rgb(0 0 0 / 55%);
+border-color: #7DE2D1;
+background-color: white;
+}
+
+
+
+.navbar-toggler {
+color: white;
+}
+/* END OF STYLING FOR THE HEADER AND NAV */
+
+
+
+.header {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    border-bottom: white 2px;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    color: white;
+    font-size: 50px;   
+}
+
+
+
+
+p {
+  color: white;
+  font-size: x-large;
+}
+.movie-cards {
+
+  width: 40px;
+  background-color: white;
+  height: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
 }

@@ -174,6 +174,8 @@ $(document).ready(function() {
 
 function getCardObj(m) {
 
+    
+
     var cardObj =
         " \ <td class='col-sm-4 col-md-3 col-lg-2'>\
                 <div class='card'\">\
@@ -220,7 +222,7 @@ function goToMovieHomePage(movieId) {
         }
     });
 }
-
+-
 function search() {
     var searchVal = "";
 

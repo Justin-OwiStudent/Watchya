@@ -4,45 +4,106 @@ $(function(){
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id');
 
-    const url = 'https://api.themoviedb.org/3/movie/550?api_key=60d58f5803d2a10a9d7bc0427dbc5023' + id;
+    console.log(id);
+
+     const url = "https://api.themoviedb.org/3/movie/"+ id +"?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
+ const imgurl = " https://api.themoviedb.org/3/movie/"+ id +"/images?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
 
     $.getJSON(url, function(result){
 
-        console.log(result);
+        console.log( result);
 
-        film_name = result.original_title;
-        launch_name = result.overview;
-        postrer = result.poster_path;
-        genre = result.genres.name;
-        rating = result.genres.name.id;
-        bgimg = result.backdrop_path;
-       studio = result.production_companies.name;
-       date = result.release_date;
-      duration = result.runtime;
+         
 
-       
-       
+         film_name =  result.original_title;
+         film_desc =  result.overview;
+         postrer = result.poster_path;
+          rating = result.vote_average;
+          Prod = result.genres[0].name;
+          ageRating =  result.adult;
+          bgimg = result.backdrop_path;
+          language = result.original_language;
+          date =   result.release_date;
+         studio = result.production_companies[0].name;
+        
 
-     
-
-        $(".title").text(film_name);
-        $(".text-genre").text(date  + genre  );
-        $(".studio").text( studio );
-        $(".genre").text(duration );
-        $(".Age-rating").text( rating );
-
-        $(".success_fail").css(" background-image","bgimg");
-
-
-      
-
-        $(".Movie-picture").attr("src", postrer);
-
-        if(film_desc[1]=== null){
-            $(".descriptin").text("There where no details found for this film");
+         if(language=== "en"){
+            $(".Speak").text("English");
         } else {
-            $(".descriptin").text ( film_desc);
+            $(".Speak").text ( language );
+        }
+       
+        if( ageRating === false){
+            $(".Age-rating").text("Pg-13");
+        } else {
+            $(".Age-rating").text ("16+" );
         }
 
+        //return (n + '').split('').map((i) => { return Number(i); })
+       
+
+     console.log(bgimg)
+
+        $(".title").text(film_name);
+        $(".Date").text(date);
+    
+        $(".Dur").text( studio);
+   
+
+        $(".hover").css("background-image", "url(.." + bgimg + ")");
+        //$(".hover").css("background-image", "url( ../images/Venom.jpg )");
+         $(".Movie-picture").css("background-image", "url(" + bgimg + ")");
+
+        
+
+        $(".Rating").text(" Rating: "+ rating);
+        $(".Vote-ammount").text(Prod );
+
+        $(".descriptin").text ( film_desc );
+
+        $("burger").on(function () {
+        $(".overlay").css("display", "block")
+      });
+      $(".Watch-button").click(function(){
+          
+        alert("Your movie has been added to the watch later page");
+        
     });
+
+    $(".Watch-button").on("click", function(){
+
+       
+
+  
+        var Film_name = result.original_title
+        var Rating = result.vote_average
+        var Poster = result.poster_path
+       // var telNum = $().val();
+      //  var pass1 = $().val();
+       // var pass2 = $().val();
+    
+        console.log(Film_name);
+        console.log(Rating);
+        console.log(Poster);
+       // console.log(telNum);
+      // console.log(pass1);
+       // console.log(pass2);
+    
+        
+       sessionStorage.setItem("name", Film_name); 
+       sessionStorage.setItem("rating", Rating);
+       sessionStorage.setItem("poster", Poster);
+         
+    
+      });
+ 
+
+
+ 
+    
+   
 });
+
+
+    });
+    
