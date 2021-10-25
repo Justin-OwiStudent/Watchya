@@ -33,7 +33,7 @@ font-size: 20px;
 
 }
 
-.nav-link-log {
+/* .nav-link-log {
 color: white;
 padding-right: 50px;
 font-size: 20px;
@@ -41,7 +41,7 @@ font-size: 20px;
 
 .nav-link-log:hover {
 color: black;
-}
+} */
 
 .navbar-light .navbar-toggler {
 color: rgb(0 0 0 / 55%);
