@@ -7,7 +7,7 @@ $(function(){
     console.log(id);
 
      const url = "https://api.themoviedb.org/3/movie/"+ id +"?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
- const imgurl = " https://api.themoviedb.org/3/movie/"+ id +"/images?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
+ //const imgurl = " https://api.themoviedb.org/3/movie/"+ id +"/images?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US"
 
     $.getJSON(url, function(result){
 
