@@ -32,15 +32,15 @@ h5 {
 
 }
 
-.nav-link-log {
+/* .nav-link-log {
   color: white;
   padding-right: 50px;
   font-size: 20px;
 }
 
 .nav-link-log:hover {
-  color: black;
-}
+  color: #7DE2D1;
+} */
 
 .navbar-light .navbar-toggler {
   color: rgb(0 0 0 / 55%);
@@ -98,11 +98,11 @@ h5 {
 }
 .Movie-picture{
     height: 89vh;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
     width:400px;
     margin-left: 20%;
     background-size: cover;
-    background-image: url(../images/beauty&thebeast.jpg);
+    /* background-image: url(../images/beauty&thebeast.jpg); */
     border-radius: 10px;
     box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
 -webkit-box-shadow: 14px 14px 43px 3px rgba(255,255,255,0.84);
@@ -234,23 +234,22 @@ margin-left:15px ;
     
 }
 .hover{
-
-   
     background-size: cover;
     background-position: center;
-   background-image: url(../images/beauty&thebeast.jpg);
-   
+   /* background-image: url(../images/beauty&thebeast.jpg); */   
     height: 600px;
     margin:  0 auto;
     padding: 0 auto;
 }
+
 .b-img{
-    height: 600px;
-   
+    height: 600px;   
     background-size: cover;
    background-position: center;
-    background-image: url(../images/img-grad.png);
+    /* background-image: url(../images/img-grad.png); */
 }
+
+
 
 /*footer*/
 .footer {

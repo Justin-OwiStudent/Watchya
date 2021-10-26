@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  console.log("ready");
-
+  console.log("watch later");
+  
     // HAMBURGER MENU //
     function myFunction() {
           var x = document.getElementById("myLinks");

@@ -21,7 +21,7 @@ $(document).ready(function() {
     const trendingUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&page=1'
     const newArrivalsUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&sort_by=release_date.desc&include_adult=false&page=1&primary_release_date.lte=2021-10-15'
     const genreListURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US";
-
+          
     $.getJSON(recommendedUrl, function(result) {
         recommendedList = result.results;
         recommendedListDisplay = displayString(recommendedList);
@@ -173,15 +173,16 @@ $(document).ready(function() {
 });
 
 function getCardObj(m) {
-
+    
     
 
     var cardObj =
         " \ <td class='col-sm-4 col-md-3 col-lg-2'>\
                 <div class='card'\">\
+                <a href='../pages/individual.html?id=" + m.id + "'> \
                     <div class='img_con' style=\"cursor: pointer;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
                         <img src='" + "https://image.tmdb.org/t/p/w500" + m.poster_path + " ' class='card-img-top' alt=''>\
-                    </div>\
+                    </div>\</a>\
                     <div class='card-body' style=\"cursor: pointer;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
                         <h5 class='card-title'>" + m.title + "</h5>\
                         <p class='card-text'><strong>Rating:</strong> " + m.vote_average + "</p>\
@@ -194,6 +195,7 @@ function getCardObj(m) {
         ";
 
     return cardObj;
+
 }
 
 function displayString(ml) {
