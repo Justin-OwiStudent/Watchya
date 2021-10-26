@@ -34,14 +34,14 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".add-img").on("click", function(){
-
-        // console.log("working");
-
-        alert("working");
-
-       });
+      $(document.body).on('click', '.add' ,function(){
+        
+        id = $(this).data("data-movie-id");
+        console.log(id);
 
 
+      });
+
+      
     
-});
+    });
