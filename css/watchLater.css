@@ -20,42 +20,19 @@ h5 {
 font-size: 50px;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-color: white;
-padding-right: 50px;
-font-size: 20px;
-}
 
-.navbar-light .navbar-nav .nav-link {
-color: white;
-padding-right: 50px;
-font-size: 20px;
-
-}
-
-/* .nav-link-log {
-color: white;
-padding-right: 50px;
-font-size: 20px;
-}
-
-.nav-link-log:hover {
-color: black;
-} */
 
 .navbar-light .navbar-toggler {
-color: rgb(0 0 0 / 55%);
-border-color: #7DE2D1;
-background-color: white;
+  color: rgb(0 0 0 / 55%);
+  border-color: #7DE2D1;
+  background-color: white;
 }
 
 
 
 .navbar-toggler {
-color: white;
+  color: white;
 }
-/* END OF STYLING FOR THE HEADER AND NAV */
-
 
 
 .header {

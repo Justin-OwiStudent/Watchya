@@ -193,6 +193,7 @@ function getCardObj(m) {
                 </div>\
             </td>\
         ";
+        
 
     return cardObj;
 

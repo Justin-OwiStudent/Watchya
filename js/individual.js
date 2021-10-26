@@ -64,6 +64,7 @@ $(function(){
         $("burger").on(function () {
         $(".overlay").css("display", "block")
       });
+      
       $(".Watch-button").click(function(){
           
         alert("Your movie has been added to the watch later page");

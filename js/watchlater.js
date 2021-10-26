@@ -34,9 +34,9 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".add").on("click", function(){
+      $(".add-img").on("click", function(){
 
-        console.log("working");
+        // console.log("working");
 
         alert("working");
 
