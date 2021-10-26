@@ -34,30 +34,14 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(".space-2").click(function(){
-
-        console.log("morning")
-      //    var json_entry = {'title': titleField.val(),
-      //             'image': $(".movie-cards").val(), 
-      //              };
-
-      //   var movieObj = JSON.stringify(json_entry);
-      //   localStorage.setItem("movieTest", movieObj);
-
-      //   var image = localStorage.getItem("movieTest");
-      //   var obj = JSON.parse(image);
-      //    document.getElementsByClassName(".movie-cards").innerHTML = obj.image;
+      $(document.body).on('click', '.add' ,function(){
+        
+        id = $(this).data("data-movie-id");
+        console.log(id);
 
 
-      //   var movie = [ 
+      });
 
-          
-      //   ];
-
-        var title = document.getElementsByClassName(".card-body");
-
-       });
-
-
+      
     
-});
+    });
