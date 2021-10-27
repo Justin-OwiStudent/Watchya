@@ -36,10 +36,9 @@ $(function () {
                     if (result.users[i].password === password) {
                         
                         if(result.users[i].account === "active") {
-                            window.location.href = "../home.html";  
-                            console.log("../Watchya/pages/home.html");                         
-                            $(".nav-link-log").text("logout");
+                            window.location.href = "../home.html";                                                                      
                             sessionStorage.setItem("username", username);
+
                         } else {
                              $(".message").css("background-color", "#7e0202");
                             $(".message").text("Your account has been susspenced! contact support");                          
@@ -57,10 +56,6 @@ $(function () {
                    $(".message").css("background-color", "#7e0202");
                    $(".message").text("Your email or password does not match");
                 } // checking for user
-
-
-
-
 
 
 

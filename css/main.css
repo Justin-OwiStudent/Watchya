@@ -10,17 +10,7 @@ body {
   width: 100vw;
 }
 
-/* 
-.header-home {
-  background-color: #ffffff11;
-  background-image: url(../images/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-} */
+
 
 .LOGO {
     width: 50px;
@@ -47,7 +37,12 @@ h5 {
   color: white;
 }
 
-
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+}
 
 
 .space {
@@ -148,6 +143,10 @@ h5 {
  
 }
 
+.hidden-id {
+  opacity: 0;
+}
+
 
 
 .card-body h2 {
@@ -176,10 +175,18 @@ h5 {
   color: white;
   text-align: center;
   font-size: 30px;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 100px;
+  
 }
+
+@media (max-width: 768px) {
+  .space-2 p {
+    font-size: 20px;
+  }
+}
+
 .add {
   width: 25px;
   height: 25px;
@@ -196,7 +203,19 @@ h5 {
 
 /* FOOTER */
 
+ .bd-placeholder-img {
+        font-size: 2rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
 .h1 {
     font-size: 30px;
@@ -207,6 +226,3 @@ h5 {
     padding-left: 50px;
 }
 
-.col-6 {
-  
-}

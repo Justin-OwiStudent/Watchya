@@ -34,6 +34,12 @@ font-size: 50px;
   color: white;
 }
 
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+}
 
 .header {
     height: 100vh;
