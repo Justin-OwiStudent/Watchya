@@ -10,17 +10,7 @@ body {
   width: 100vw;
 }
 
-/* 
-.header-home {
-  background-color: #ffffff11;
-  background-image: url(../images/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-} */
+
 
 .LOGO {
     width: 50px;
@@ -31,39 +21,22 @@ body {
  
 h5 {
   font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color: white;
-  padding-right: 50px;
-  font-size: 20px;
-}
 
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  padding-right: 50px;
-  font-size: 20px;
-
-}
-
-.navbar-nav .nav-link {
-  color: #7DE2D1;
-}
-
-/* .nav-link-log {
-  color: white;
-  padding-right: 50px;
-  font-size: 20px;
-} */
-
-/* .nav-link-log:hover {
-  color: #7DE2D1;
-} */
 
 .navbar-light .navbar-toggler {
   color: rgb(0 0 0 / 55%);
   border-color: #7DE2D1;
   background-color: white;
+  
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: 'Fjalla One', sans-serif;
+  
+  color: rgba(255,255,255,.55);
 }
 
 
@@ -72,7 +45,12 @@ h5 {
   color: white;
 }
 
-
+.profile {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+}
 
 
 .space {
@@ -80,10 +58,10 @@ h5 {
 }
 
 .space h1 {
-
+  font-family: 'Bebas Neue', cursive;
   color: white;
   border-bottom: white 2px solid;
-  width: 350px;
+  width: 200px;
   margin-left: 50px;
   margin-top: 80px;
 }
@@ -135,8 +113,9 @@ h5 {
 }
 
 .card-body h3 {
+  font-family: 'Fjalla One', sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .btn {
@@ -173,6 +152,10 @@ h5 {
  
 }
 
+.hidden-id {
+  opacity: 0;
+}
+
 
 
 .card-body h2 {
@@ -189,22 +172,34 @@ h5 {
 }
 
 .space-2 h1 {
+  font-family: 'Bebas Neue', cursive;
+
   color: white;
   text-align: center;
   border-bottom: white 2px solid;
-  width: 400px;
+  width: 250px;
   margin: 0 auto;
   margin-top: 100px;
 }
 
 .space-2 p {
+  font-family: 'Fjalla One', sans-serif;
+
   color: white;
   text-align: center;
   font-size: 30px;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 100px;
+  
 }
+
+@media (max-width: 768px) {
+  .space-2 p {
+    font-size: 20px;
+  }
+}
+
 .add {
   width: 25px;
   height: 25px;
@@ -221,7 +216,19 @@ h5 {
 
 /* FOOTER */
 
+ .bd-placeholder-img {
+        font-size: 2rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
 .h1 {
     font-size: 30px;
@@ -232,6 +239,3 @@ h5 {
     padding-left: 50px;
 }
 
-.col-6 {
-  
-}
