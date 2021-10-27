@@ -21,7 +21,7 @@ $(document).ready(function() {
     const trendingUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&page=1'
     const newArrivalsUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US&sort_by=release_date.desc&include_adult=false&page=1&primary_release_date.lte=2021-10-15'
     const genreListURL = "https://api.themoviedb.org/3/genre/movie/list?api_key=60d58f5803d2a10a9d7bc0427dbc5023&language=en-US";
-          
+
     $.getJSON(recommendedUrl, function(result) {
         recommendedList = result.results;
         recommendedListDisplay = displayString(recommendedList);
@@ -170,21 +170,19 @@ $(document).ready(function() {
                 .text(ratingList[rr]));
     };
 
+    console.log("App ready");
 });
 
 function getCardObj(m) {
-    
-    
 
     var cardObj =
         " \ <td class='col-sm-4 col-md-3 col-lg-2'>\
                 <div class='card'\">\
-                <a href='../pages/individual.html?id=" + m.id + "'> \
                     <div class='img_con' style=\"cursor: pointer;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
                         <img src='" + "https://image.tmdb.org/t/p/w500" + m.poster_path + " ' class='card-img-top' alt=''>\
-                    </div>\</a>\
-                    <div class='card-body' style=\"cursor: pointer;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
-                        <h5 class='card-title'>" + m.title + "</h5>\
+                    </div>\
+                    <div class='card-body' style=\"cursor: pointer;background-color: #F5F5F5;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
+                        <p class='card-title' style=\"color: black;font-size: 20px;font-weight: bold\">" + m.title + "</p>\
                         <p class='card-text'><strong>Rating:</strong> " + m.vote_average + "</p>\
                     </div>\
                     <div class=\"card-footer d-flex align-items-center justify-content-center\">\
@@ -193,10 +191,8 @@ function getCardObj(m) {
                 </div>\
             </td>\
         ";
-        
 
     return cardObj;
-
 }
 
 function displayString(ml) {
@@ -225,11 +221,11 @@ function goToMovieHomePage(movieId) {
         }
     });
 }
--
+
 function search() {
     var searchVal = "";
 
-    searchVal = $("#searchtxt").val();
+    searchVal = $("#searchtxtlg").val();
 
     console.log(searchVal);
 
@@ -255,26 +251,19 @@ function search() {
     }
 }
 
-function checkDisplay(inputbox) {
+function checkDisplay(boxtype) {
     var searchVal = "";
 
-    if (inputbox === "lg") {
-        searchVal = $("#searchtxt").val();
+    if (boxtype === "lg") {
+        searchVal = $("#searchtxtlg").val();
         $("#searchtxtmd").val(searchVal);
-        $("#searchtxtxs").val(searchVal);
-    }
-
-    if (inputbox === "md") {
+    } else {
         searchVal = $("#searchtxtmd").val();
         $("#searchtxtlg").val(searchVal);
-        $("#searchtxtxs").val(searchVal);
     }
 
-    if (inputbox === "xs") {
-        searchVal = $("#searchtxtcs").val();
-        $("#searchtxtmd").val(searchVal);
-        $("#searchtxtlg").val(searchVal);
-    }
+
+    console.log("Checking for: " + searchVal);
 
     if (searchVal === "" && showSearchResults === true) {
         $("#nonsearchDisplay").show();

@@ -1,10 +1,10 @@
 body {
     background-color: #131515;
-    background-image: url(../images/dark\ background.jpg);
     width: 100vw;
     height: 1500px;
     margin: 10px;
     overflow-x: hidden;
+    padding-top: 200px;
 }
 
 .headerContainer {
@@ -91,18 +91,18 @@ h1 {
     padding: 0;
     height: 435px;
     width: 250px;
-    color: black;
 }
 
 .card:hover {
-    box-shadow: 13px 12px 21px -7px #7DE2D1;
-    -webkit-box-shadow: 13px 12px 21px -7px #7DE2D1;
-    -moz-box-shadow: 13px 12px 21px -7px #7DE2D1;
-    
+    border: #7DE2D1 solid 1px;
+    transition: all 0s ease-in-out;
+    background-color: rgb(19, 0, 0);
+    color: white;
+  
 }
 
 .card-footer {
-    background-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
 }
 
 .img_con {
@@ -110,8 +110,6 @@ h1 {
     height: 250px;
     overflow: hidden;
 }
-
-
 
 .addToList {
     color: whitesmoke;
@@ -122,12 +120,16 @@ h1 {
 .filtersearchcontainer {
     width: 100%;
     color: #dfdfdf;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
-.searchinput {
-    width: 250px;
+.searchinput {}
+
+.searchbtn {
+    border-radius: 0;
+    position: relative;
+    bottom: 0px;
 }
 
 .searchCard {
@@ -231,7 +233,11 @@ h1 {
     color: white;
 }
 
+.menuItems {
+    padding-left: 75%;
+}
 
-
-
-
+.dropdown-item {
+    color: whitesmoke;
+    background-color: lightgray;
+}
