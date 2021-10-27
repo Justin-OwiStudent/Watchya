@@ -28,6 +28,11 @@ font-size: 50px;
   background-color: white;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  font-family: 'Fjalla One', sans-serif;
+  
+  color: rgba(255,255,255,.55);
+}
 
 
 .navbar-toggler {
@@ -50,6 +55,7 @@ font-size: 50px;
     padding-top: 100px;
 }
 h1 {
+    font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 50px;   
 }
@@ -58,6 +64,7 @@ h1 {
 
 
 p {
+  font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: x-large;
 }
