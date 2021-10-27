@@ -78,11 +78,11 @@ p {
   color: white;
   font-size: x-large;
 }
-.movie-cards {
+#movie-cards {
 
-  width: 40px;
+  width: 400px;
   background-color: white;
-  height: 200px;
+  height: 500px;
   margin-left: 200px;
   margin-bottom: 50px;
 }

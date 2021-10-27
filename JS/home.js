@@ -27,7 +27,7 @@ $(document).ready(function () {
                   <h3>" + result.results[i].title + "</h3>\
                   <a href='pages/individual.html?id=" + result.results[i].id + "'> <div class='btn'>\<h4> Watch Now</h4>\
                   </div>\</a>\
-                  <div data-movie-id='"+ result.results[i].id  +"' class='add'>\
+                  <div id= 'data-movie-id'"+ result.results[i].id  +"' class='add'>\
                     <img src= ../Watchya/images/added.svg>\
                   </div>\
                   <h2> " + result.results[i].vote_average + " </h2>\
