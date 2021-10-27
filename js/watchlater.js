@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log("watch later");
+  
   
     // HAMBURGER MENU //
     function myFunction() {
@@ -39,9 +39,18 @@ $(document).ready(function(){
         id = $(this).data("data-movie-id");
         console.log(id);
 
+        //setting the image
+        
+        var image = document.getElementById("data-movie-id");
+        localStorage.setItem('data-movie-id', image);
 
+        // getting the image
+        var movie = localStorage.getItem('data-movie-id');
+        document.getElementsByClassName('movie-cards').innerHTML = movie;
+
+        
       });
 
       
     
-    });
+});
