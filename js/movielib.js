@@ -177,14 +177,14 @@ function getCardObj(m) {
 
     var cardObj =
         " \ <td class='col-sm-4 col-md-3 col-lg-2'>\
-                <div class='card'\">\
+                <div class='card'\">\  <a href='../pages/individual.html?id=" + m.id + "'>\
                     <div class='img_con' style=\"cursor: pointer;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
                         <img src='" + "https://image.tmdb.org/t/p/w500" + m.poster_path + " ' class='card-img-top' alt=''>\
                     </div>\
                     <div class='card-body' style=\"cursor: pointer;background-color:#1c1c1f;\" onclick=\"goToMovieHomePage('" + m.id + "')\">\
                         <p class='card-title' style=\"color: white;font-size: 20px;font-weight: bold\">" + m.title + "</p>\
                         <p class='card-text' style=\"color: white\"><strong>Rating:</strong> " + m.vote_average + "</p>\
-                    </div>\
+                    </div>\</a>\
                     <div class=\"card-footer d-flex align-items-center justify-content-center\">\
                         <button type=\"button\" class=\"btn btn-danger btn-rounded btn-icon addToList\" onclick=\"addWatchLater('" + m.id + "','" + m.title + "')\"> <i class=\"fa fa-plus\"></i> Watch Later</button>\
                     </div>\
