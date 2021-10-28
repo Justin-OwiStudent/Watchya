@@ -41,7 +41,7 @@ h5 {
 .profile {
   width: 40px;
   height: 40px;
-  background-color: white;
+  
   border-radius: 25px;
 }
 
@@ -105,8 +105,8 @@ h5 {
 .Movie-picture{
     height: 89vh;
   /* background-color: blueviolet; */
-    width:400px;
-    margin-left: 20%;
+    width:600px;
+    margin-left: 15%;
     background-size: cover;
     /* background-image: url(../images/beauty&thebeast.jpg); */
     border-radius: 10px;
@@ -133,6 +133,10 @@ h5 {
     background-color: rgba(184, 147, 147, 0);
     height: 100px;
 }
+
+
+
+
 .left-child-one{
    
     height: 190px;
@@ -177,8 +181,8 @@ h5 {
     
 margin-left:15px ;
 }
+
 .left-child-two{
- 
     height: auto;
     padding-left: 20px;
     

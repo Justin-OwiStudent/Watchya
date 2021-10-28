@@ -41,9 +41,13 @@ font-size: 50px;
 
 .profile {
   width: 40px;
-  height: 40px;
-  background-color: white;
+  height: 40px; 
   border-radius: 25px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
 }
 
 .header {
