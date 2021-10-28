@@ -13,21 +13,25 @@
     <link rel="icon" href="../images/Group 3.png" type="image/png">
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- JS -->
     <script src="../JS/movielib.js"></script>
-  <script src="../JS/loginvalidation.servise.js">    </script>
+    <script src="../JS/loginvalidation.servise.js">    </script>
 
-<!-- FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
     <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
@@ -42,37 +46,39 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 
         <div class="container-fluid">
-  
-          <a class="navbar-brand" href="#">
-           <img class="LOGO" src="../images/LOGO.svg">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/watchLater.html">Watch Later</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link active" href="../pages/movieLib.html">Library</a>
-               </li>
-               <li class="nav-item">
-                 <div class="profile"><img class="image" src="../images/user.png" alt=""> </div>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" id="logout" href="../Watchya/pages/loginReg.html">Signout</a>
-               </li>
-              
-            </ul>
-            
-          </div>
+
+            <a class="navbar-brand" href="#">
+                <img class="LOGO" src="../images/LOGO.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/watchLater.html">Watch Later</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/movieLib.html">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="profile"><img class="image" src="../images/user.png" alt=""> </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout" href="../Watchya/pages/loginReg.html">Signout</a>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
-      </nav>
+    </nav>
     <div class="container-fluid">
 
 
@@ -85,11 +91,12 @@
                     </div>
                     <div class="col-6">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Movie Library" id="searchtxtlg" onkeyup="checkDisplay('lg')">
+                            <input type="text" class="form-control" placeholder="Search Movie Library" id="searchtxtlg"
+                                onkeyup="checkDisplay('lg')">
                             <div class="input-group-append">
                                 <button class="btn btn-secondary searchbtn" type="button" onclick="search()">
-                                <i class="fa fa-search"></i>
-                            </button>
+                                    <i class="fa fa-search"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -105,19 +112,22 @@
                             </div>
                             <div class="cell col-3">
                                 <div class="form-group form-inline">
-                                    <select class="form-select" id="genreSelect" aria-label="Genre filter list" onchange="filterChanged()">
+                                    <select class="form-select" id="genreSelect" aria-label="Genre filter list"
+                                        onchange="filterChanged()">
                                     </select>
                                 </div>
                             </div>
                             <div class="cell col-3">
                                 <div class="form-group form-inline">
-                                    <select class="form-select" id="yearSelect" aria-label="Year filter list" onchange="filterChanged()">
+                                    <select class="form-select" id="yearSelect" aria-label="Year filter list"
+                                        onchange="filterChanged()">
                                     </select>
                                 </div>
                             </div>
                             <div class="cell col-3">
                                 <div class="form-group form-inline">
-                                    <select class="form-select" id="ratingSelect" aria-label="Rating filter list" onchange="filterChanged()">
+                                    <select class="form-select" id="ratingSelect" aria-label="Rating filter list"
+                                        onchange="filterChanged()">
                                     </select>
                                 </div>
                             </div>
@@ -126,11 +136,12 @@
                     <div class="cell col-lg-6 d-none d-lg-block d-xl-block">
                         <div class="cell col-6">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search Movie Library" id="searchtxtmd" onkeyup="checkDisplay('md')">
+                                <input type="text" class="form-control" placeholder="Search Movie Library"
+                                    id="searchtxtmd" onkeyup="checkDisplay('md')">
                                 <div class="input-group-append">
                                     <button class="btn btn-secondary searchbtn" type="button" onclick="search()">
-                                    <i class="fa fa-search"></i>
-                                </button>
+                                        <i class="fa fa-search"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -169,23 +180,26 @@
 
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
-          
-              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-              </a>
-          
-              <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Watch Later</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Library</a></li>
-                
-              </ul>
-            </footer>
-          </div>
-        </div>
+                <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
 
-    
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Watch Later</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Library</a></li>
+
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
