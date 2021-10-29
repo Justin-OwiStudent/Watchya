@@ -1,6 +1,48 @@
 $(document).ready(function(){
   
-  
+// getting the image
+    // var movie = localStorage.getItem('data-movie-id');
+    // var div = $("#movie-cards");
+    
+    // console.log(movie);
+
+    
+
+    // if(data-id === 580489 ){
+      
+    //   var img = document.createElement('img');
+
+    //   img.src = 'https://movieweb.com/movie/venom-2/';
+    //   document.getElementById("movie-cards").appendChild(img);
+    //   }
+
+
+
+
+
+    //     //       watchlist.js >
+
+    //     // 1. Get the movie id from local storage
+
+    //     // 2. perform the API call to the above link using the movie id that you stored
+
+    //     // 3. append (just like you did in the home page)
+
+
+
+
+
+    // // HAMBURGER MENU //
+    // function myFunction() {
+    //       var x = document.getElementById("myLinks");
+    //       if (x.style.display === "block") {
+    //         x.style.display = "none";
+    //       } else {
+    //         x.style.display = "block";
+    //       }
+    //    };
+    
+
 
 
 
@@ -24,22 +66,15 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(document.body).on('click', '.add' ,function(){
-        
-        id = $(this).data("data-movie-id");
-        console.log(id);
+      $(".remove-movies").click(function(){
 
-        //setting the image
-        
-        var image = document.getElementById("data-movie-id");
-        localStorage.setItem('data-movie-id', image);
+        $("#movie-cards").remove();
 
-        // getting the image
-        var movie = localStorage.getItem('data-movie-id');
-        document.getElementsByClassName('movie-cards').innerHTML = movie;
+      })
 
         
-      });
+      
+      
 
       
     
