@@ -36,7 +36,7 @@ $(function () {
                     if (result.users[i].password === password) {
                         
                         if(result.users[i].account === "active") {
-                            window.location.href = "../home.html";                                                                      
+                            window.location.href = "../index.html";                                                                      
                             sessionStorage.setItem("username", username);
 
                         } else {

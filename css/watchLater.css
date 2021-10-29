@@ -28,6 +28,11 @@ font-size: 50px;
   background-color: white;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  font-family: 'Fjalla One', sans-serif;
+  
+  color: rgba(255,255,255,.55);
+}
 
 
 .navbar-toggler {
@@ -36,9 +41,13 @@ font-size: 50px;
 
 .profile {
   width: 40px;
-  height: 40px;
-  background-color: white;
+  height: 40px; 
   border-radius: 25px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
 }
 
 .header {
@@ -50,6 +59,7 @@ font-size: 50px;
     padding-top: 100px;
 }
 h1 {
+    font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 70px;   
 }
@@ -58,6 +68,7 @@ h1 {
 
 
 p {
+  font-family: 'Fjalla One', sans-serif;
   color: white;
   font-size: 50px;
 }

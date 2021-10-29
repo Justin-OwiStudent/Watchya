@@ -43,6 +43,8 @@ body {
 }
 
 .toggle-btn-log {
+  font-family: 'Fjalla One', sans-serif;
+
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
@@ -52,6 +54,8 @@ body {
 }
 
 .toggle-btn-reg {
+  font-family: 'Fjalla One', sans-serif;
+
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
