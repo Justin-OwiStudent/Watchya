@@ -66,11 +66,15 @@ $(document).ready(function(){
 
       // ADDING TO WATCH LATER //
 
-      $(document.body).on('click', '.add' ,function(){
+      $(".remove-movies").click(function(){
 
-        $(".header-paragraph").remove();
+        $("#movie-cards").remove();
+
+      })
+
+        
       
-      });
+      
 
       
     
